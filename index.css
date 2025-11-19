@@ -1,0 +1,310 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f6fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== NAVEGAÇÃO ===== */
+section h6 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 8.8rem;
+  color: #0a1d37;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.Suma {
+  list-style: none;
+  display: flex;
+  gap: 13rem;
+  padding: 1rem;
+  background: #002c6b;
+  border-radius: 30px;
+}
+
+.Suma li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.Suma li a:hover {
+  color: #7c9efd;
+}
+
+
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.Feu img,
+figure.Feu img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0a1d37;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mn {
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #0a1d37;
+  margin-top: 1rem;
+}
+
+.dev {
+  font-size: 1.3rem;
+  color: #001730;
+}
+
+/* ===== SOBRE MIM ===== */
+.SobrM {
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 1.5em;
+  background: #fff;
+  border-left: 6px solid #0a1d37;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  justify-content: center;
+}
+
+.SobrM h3 {
+  color: #0a1d37;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.SobrM p {
+  text-align: center;
+
+}
+
+.LiAreas {
+  max-width: 97%;
+  margin: 2rem auto;
+  padding: 1.5em;
+  background: #fff;
+  border-left: 6px solid #0a1d37;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  justify-content: center;
+}
+
+
+/* ===== ÁREAS DE CONHECIMENTO ===== */
+.Titcurr {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.h1Ce {
+  font-size: 3.4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #0a1d37;
+  border-bottom: 2px solid #02203f;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.Areas {
+  width: 100%;
+  margin-top: 60px;
+  height: 90%;
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.Areas img {
+  width: 80%;
+  height: 80%;
+  margin-left: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 100%;
+
+}
+
+.Areas img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ESCOLHIDA {
+  width: 100%;
+}
+
+.UL-ESCOLHIDA {
+  display: flex;
+  justify-content: center;
+  gap: 5.2%;
+  list-style: none;
+  margin: 3rem auto;
+  max-width: 1400px;
+  text-align: center;
+  align-items: center;
+}
+
+.ATV-ESCOLHIDA {
+  width: 13%;
+  /* Aumentei a largura para a imagem ficar maior */
+  border-radius: 50%;
+  /* Garante um círculo perfeito */
+  overflow: hidden;
+  /* Esconde partes da imagem que saem do círculo */
+}
+
+.ATV-ESCOLHIDA img {
+  width: 100%;
+  /* Faz a imagem preencher todo o espaço do círculo */
+  height: 100%;
+  object-fit: cover;
+  /* Garante que a imagem cubra a área sem distorcer */
+
+}
+
+.ATV-ESCOLHIDA:hover {
+  transform: scale(1.06);
+  box-shadow: 0 20px 26px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===== CURRÍCULO ===== */
+.Curriculo img,
+figure.CE img {
+  display: block;
+  margin: 0.3em auto;
+  width: 45%;
+  /* tamanho médio */
+  max-width: 450px;
+  /* limite para não ficar gigante */
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.Curriculo img:hover {
+  transform: scale(1.05);
+  /* aumenta um pouco no hover */
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ===== CONSIDERAÇÕES ===== */
+.Considerações {
+  background: #0a1d37;
+  color: #fff;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.Considerações h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.Considerações p {
+  text-align: center;
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  font-size: 18px;
+  padding: 1rem;
+  background: #0a1d37;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* ===== MENU RESPONSIVO ===== */
+.menu-btn {
+  display: none;
+  background: #0a1d37;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem auto;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #0a1d37;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .Suma {
+    flex-direction: column;
+    gap: 1rem;
+    background: transparent;
+  }
+}
+
+/* --- Estilos para os Cards de Referências --- */
+.referencias-lista .ATV-ESCOLHIDA {
+  width: 5%;
+  /* Diminui o tamanho do card */
+}
+
+.referencias-lista img {
+  width: 100%;
+  /* Faz a imagem preencher o contêiner */
+  height: 100%;
+  object-fit: cover;
+  /* Garante que a imagem cubra o espaço sem distorcer */
+  border-radius: 50%;
+  /* Deixa a imagem perfeitamente redonda */
+}
+
+/* --- Estilos para o Card de Anexos --- */
+.anexos-lista .ATV-ESCOLHIDA {
+  width: 10%;
+  /* Tamanho intermediário para o card de anexo */
+}

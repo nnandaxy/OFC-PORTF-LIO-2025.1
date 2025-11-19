@@ -1,0 +1,138 @@
+body {
+    color: rgb(0, 88, 139);
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue
+}
+
+p {
+    font-size: 25px;
+    margin-top: 26px;
+    color: rgb(1, 33, 123);
+    margin-left: 30px;
+}
+
+.image-container {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    /* Centraliza as imagens */
+}
+
+/* Círculos escuros */
+.circle {
+    position: absolute;
+    border: 20px solid #12234e;
+    border-radius: 50%;
+    background: transparent;
+    margin-top: -20px;
+    margin-left: -10px;
+    position: fixed;
+}
+
+/* Círculo azul claro */
+.circle.light {
+    border-color: #0656b8;
+    border-width: 10px;
+    margin-right: -20px;
+    position: fixed;
+}
+
+/* Posições dos círculos */
+.circle1 {
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: 50px;
+    position: fixed;
+}
+
+.circle2 {
+    width: 120px;
+    height: 120px;
+    top: 30%;
+    right: 150px;
+    margin-right: -30px;
+    position: fixed;
+}
+
+
+.circle4 {
+    width: 50px;
+    height: 50px;
+    top: 30%;
+    right: 220px;
+    position: fixed;
+}
+
+/* Pontinhos azuis em padrão diagonal */
+.dots {
+    position: absolute;
+    top: 25%;
+    right: 225px;
+    display: grid;
+    grid-template-columns: repeat(3, 5px);
+    grid-gap: 3px;
+    position: fixed;
+}
+
+.dots div {
+    width: 5px;
+    height: 5px;
+    background-color: #5f95e0;
+    border-radius: 50%;
+}
+
+/* Textura de aquarela no canto inferior esquerdo */
+.watercolor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url('sua-imagem.png');
+    /* Substitua pelo nome correto */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+p {
+    font-size: 25px;
+    margin-top: 26px;
+    color: rgb(1, 33, 123);
+    margin-left: 30px;
+}
+
+img {
+    width: 250px;
+    /* Define um tamanho padrão */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    /* Adiciona bordas arredondadas */
+}
+
+/*Crescer imagem*/
+/*Crescer imagem*/
+ul img:hover {
+    transform: scale(1.5);
+}
+
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px;
+    /* Adiciona um pequeno espaço entre as imagens */
+}
+
+img:hover {
+    transform: scale(1.05);
+    /* Aumenta a imagem levemente ao passar o mouse */
+    box-shadow: 0 8px 25px rgba(10, 29, 55, 0.3);
+    /* Adiciona um sombreado azul escuro suave */
+}

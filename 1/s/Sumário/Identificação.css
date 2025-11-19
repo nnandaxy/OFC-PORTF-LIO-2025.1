@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Círculos escuros */
+.circle {
+  position: absolute;
+  border: 20px solid #11265d;
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Círculo azul claro */
+.circle.light {
+  border-color: #0656b8;
+  border-width: 10px;
+}
+
+/* Posições dos círculos */
+.circle1 {
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: 50px;
+}
+
+.circle2 {
+  width: 120px;
+  height: 120px;
+  top: 30%;
+  right: 150px;
+}
+
+.circle3 {
+  width: 250px;
+  height: 250px;
+  bottom: -125px;
+  left: 40%;
+}
+
+.circle4 {
+  width: 50px;
+  height: 50px;
+  top: 30%;
+  right: 220px;
+}
+
+/* Pontinhos azuis em padrão diagonal */
+.dots {
+  position: absolute;
+  top: 25%;
+  right: 225px;
+  display: grid;
+  grid-template-columns: repeat(3, 5px);
+  grid-gap: 3px;
+}
+
+.dots div {
+  width: 5px;
+  height: 5px;
+  background-color: #5f95e0;
+  border-radius: 50%;
+}
+
+/* Textura de aquarela no canto inferior esquerdo */
+.watercolor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url('sua-imagem.png'); /* Substitua pelo nome correto */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+
+body{
+   color:rgb(2, 9, 100);
+   background-color: #ffffff;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+h1{
+    color: rgb(2, 9, 100)
+}
+p{
+font-size: 25px;
+margin-top: 26px;
+color: rgb(1, 33, 123);
+
+ }
+.container {
+    display: flex; /* Mantém os elementos lado a lado */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    justify-content: center;
+}
+
+img {
+    width: 340px; /* Ajusta o tamanho da imagem */
+    height: auto;
+    border-radius: 10px; /* Adiciona um efeito arredondado */
+    order: 1; /* Move a imagem para a esquerda */
+    margin-top: 80px;
+    margin: 50px;
+    justify-content: center;
+}
+
+
+.text {
+    max-width: 500px; /* Define uma largura máxima para o texto */
+}

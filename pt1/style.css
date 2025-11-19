@@ -1,0 +1,252 @@
+
+body{
+    color:rgb(255, 255, 255);
+    background-color: #091a70;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h6{
+    color: #f9f9f9;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* todos os links brancos */
+a{
+    text-decoration:none;
+    color: #ffffff;
+}
+a:hover{
+    color: #04046c;
+}
+body ul{
+    list-style-type: none;
+}
+/*<-------------------------------------------------------------------------------------------Sumário------------------------------------------------------------------------------------------->*/
+
+/* Lista Sumário Navegação */
+.Suma{
+    margin-top: -460px;
+    display: flex;
+    list-style-type: none;
+    align-items: center; 
+    color: #ffffff;
+    justify-content: space-evenly;
+    font-size: 20px;
+    background-color: #2732ad ;
+}
+ 
+/* Cursor deixa link azul */
+.Suma ul a:hover{
+    color: #067dc2;
+    
+}
+
+/* Cursor cresce o link */
+.Suma p:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+}
+
+/*<-------------------------------------------------------------------------------------------/Sumário------------------------------------------------------------------------------------------>*/
+/*<--------------------------------------------------------------------------------------------header------------------------------------------------------------------------------------------->*/
+
+
+
+
+/* Foto de Perfil*/
+header img{
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid #087fc4;
+}
+
+
+
+/* Titulos das informações brancos */
+.h3,.h4,.h5{ 
+    color: #ffffff; 
+}
+
+/* Meu Nome */
+.mn{
+    text-align:center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #F5EFEB;
+    margin-top: 20px;
+}
+
+/* Desenvolvedor */
+.dev{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    margin-top: -20px;
+}
+
+/* centralizar Foto de Perfil*/
+.Feu{
+    text-align: center;
+    
+}
+
+/*Redes Sociais Centraliizadas*/
+.RedesS{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* Tamanho das redes sociais */
+.RedesS .yt1{
+    height: 40px;
+    width: 40px;
+    margin-top: -4px;
+    border-radius: 50%;
+
+}
+
+/* Tamanho das redes sociais */
+.RedesS .in1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+/*Animação dos icones*/
+.RedesS img:hover{
+    border-radius: 5%;
+    border: 3px;
+    transform: scale(1.5);
+    transform: translate(0px, -3px);
+    transition: transform 0.4s ease-out;
+}
+/*<-------------------------------------------------------------------------------------------/header------------------------------------------------------------------------------------------->*/
+
+
+
+/*<-------------------------------------------------------------------------------------------Main------------------------------------------------------------------------------------------->*/
+
+/* Informações Sobre mim, projetos e contato */
+.informs{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center; 
+    padding: 20px;
+    background-color: #ffffff(68, 110, 135,1);
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Sobre Mim*/
+.h3{
+    color: #ffffff;
+    margin-left: 0px;
+    text-align: center;
+    margin-top: -20px;
+
+}
+
+/*Projetos*/
+.h4{
+    text-align: center;
+    color: #ffffff;
+
+}
+.Proj{
+    text-align: center;
+    margin-right: 0px;
+}
+
+/*Contato*/
+.h5{
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/*Areas de Conhecimento*/
+main h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Lista areas de conhecimento*/
+.Areas{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center; 
+    padding: 20px;
+}
+/* Bordas redondas na imagem*/
+.Areas img{
+   border-radius: 5%;
+   border: 3px solid transparent;
+   transition: border-color 0.3s ease;
+}
+
+/*Efeito na borda da imagem*/
+.Areas a img:hover{
+    border-color: #ffffff;
+}
+
+/* Margem */
+main .CE img{
+height: 700px;
+width: 500px;
+}
+
+/* Titulo Curriculo*/
+.h1Ce{
+    margin-top: 40px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif
+}
+.Titcurr{
+    background-color: #5792da;
+}
+
+/* foto curriculo */
+main .h1Ce, .CE{
+    text-align: center;
+    margin-top: -20px;
+}
+
+/* titulo considerações */
+.h1C{
+    text-align: center;
+}
+
+/* paragrafo considerações */
+.pC{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* cor de fundo considerações */
+.Cons{
+    background-color: #023471;
+}
+
+/*<-------------------------------------------------------------------------------------------/Main------------------------------------------------------------------------------------------->*/
+
+
+/*<-------------------------------------------------------------------------------------------Footer------------------------------------------------------------------------------------------->*/
+
+/* Orientador*/
+footer p{
+    text-align: center;
+}
+
+
+/*<-------------------------------------------------------------------------------------------Footer------------------------------------------------------------------------------------------->*/

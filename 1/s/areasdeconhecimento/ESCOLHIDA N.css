@@ -1,0 +1,186 @@
+body {
+  color: rgb(0, 88, 139);
+  background-color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: darkblue
+}
+
+/* Círculos escuros */
+.circle {
+  position: absolute;
+  border: 20px solid #12234e;
+  border-radius: 50%;
+  background: transparent;
+  margin-top: -20px;
+  margin-left: -10px;
+  position: fixed;
+}
+
+/* Círculo azul claro */
+.circle.light {
+  border-color: #0656b8;
+  border-width: 10px;
+  margin-right: -20px;
+  position: fixed;
+}
+
+/* Posições dos círculos */
+.circle1 {
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: 50px;
+  position: fixed;
+}
+
+.circle2 {
+  width: 120px;
+  height: 120px;
+  top: 30%;
+  right: 150px;
+  margin-right: -30px;
+  position: fixed;
+}
+
+
+.circle4 {
+  width: 50px;
+  height: 50px;
+  top: 30%;
+  right: 220px;
+  position: fixed;
+}
+
+/* Pontinhos azuis em padrão diagonal */
+.dots {
+  position: absolute;
+  top: 25%;
+  right: 225px;
+  display: grid;
+  grid-template-columns: repeat(3, 5px);
+  grid-gap: 3px;
+  position: fixed;
+}
+
+.dots div {
+  width: 5px;
+  height: 5px;
+  background-color: #5f95e0;
+  border-radius: 50%;
+}
+
+/* Textura de aquarela no canto inferior esquerdo */
+.watercolor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url('sua-imagem.png');
+  /* Substitua pelo nome correto */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+p {
+  font-size: 25px;
+  margin-top: 26px;
+  color: rgb(1, 33, 123);
+  margin-left: 30px;
+}
+
+/* --- Estilos do Carrossel --- */
+.carousel-container {
+  position: relative;
+  width: 95%;
+  max-width: 850px;
+  /* Aumenta a largura máxima do carrossel */
+  margin: 50px auto;
+}
+
+.carousel-slide {
+  display: none;
+  animation: fade 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.card {
+  background-color: transparent;
+  /* Card transparente */
+  border-radius: 15px;
+  box-shadow: none;
+  /* Sombra removida */
+  padding: 25px;
+  text-align: center;
+  border: none;
+  /* Bordas removidas */
+}
+
+.card h1 {
+  font-size: 3.3rem;
+  /* Fonte do título aumentada */
+  margin-top: -20px;
+  /* Move o título para cima */
+  margin-bottom: 10px;
+  /* Diminui o espaço abaixo do título, movendo a imagem para cima */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(10, 29, 55, 0.7);
+  color: white;
+  border: none;
+  width: 45px;
+  /* Define largura e altura iguais para um círculo perfeito */
+  height: 45px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+  display: flex;
+  /* Centraliza o ícone dentro do botão */
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(10, 29, 55, 1);
+}
+
+.prev-btn {
+  left: -70px;
+  /* Move o botão para fora do card */
+}
+
+.next-btn {
+  right: -70px;
+  /* Move o botão para fora do card */
+}

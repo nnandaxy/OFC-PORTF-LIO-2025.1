@@ -1,0 +1,46 @@
+body{
+   color:rgb(0, 88, 139);
+   background-color: #ffffff;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+}
+h1{
+    color: darkblue
+}
+p{
+font-size: 25px;
+margin-top: 26px;
+color: rgb(1, 33, 123);
+margin-left: 30px;
+ }
+.image-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; /* Centraliza as imagens */
+}
+
+img {
+    width: 370px; /* Define um tamanho padrão */
+    height: 495px; /* Mantém a proporção da imagem */
+}
+/*Crescer imagem*/
+ul img:hover{
+        transform: scale(1.5);
+}
+/*Crescer imagem*/
+ul img:hover {
+    transform: scale(1.5);
+}
+ img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 8px;
+            margin: 5px; /* Adiciona um pequeno espaço entre as imagens */
+        }
+
+ img:hover {
+            transform: scale(1.05);
+            /* Aumenta a imagem levemente ao passar o mouse */
+            box-shadow: 0 8px 25px rgba(10, 29, 55, 0.3);
+            /* Adiciona um sombreado azul escuro suave */
+        }

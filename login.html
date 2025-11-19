@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Nanda</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Apenas a imagem de fundo */
+            background-image: url('ESCOLHIDAS EIXO/capa.png');
+            background-size: cover;
+            /* Faz a imagem cobrir toda a tela */
+            background-position: center;
+            /* Centraliza a imagem */
+            background-repeat: no-repeat;
+            /* Evita que a imagem se repita */
+            background-attachment: fixed; /* Mantém a imagem fixa durante o scroll */
+            overflow: hidden;
+            /* Esconde as partes dos círculos que saem da tela */
+        }
+
+        .login-container {
+            position: relative;
+            z-index: 2;
+            width: 350px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0);
+            /* Aumentei a opacidade aqui */
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 25px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 28px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Ajustei a opacidade aqui também */
+            color: #ffffff;
+            transition: border-color 0.3s ease;
+        }
+
+        .login-container input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .login-container input:focus {
+            outline: none;
+            border-color: #067dc2;
+        }
+
+        .login-container input[type="submit"] {
+            background-color: #00326e;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #067dc2;
+        }
+
+        .error-message {
+            color: red;
+            background-color: rgba(255, 0, 0, 0.1);
+            border: 1px solid rgba(255, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Meu portfólio</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Nome de usuário" id="login" required>
+            <input type="password" placeholder="Senha" id="senha" required>
+            <input type="submit" value="Entrar">
+            <p class="error-message" id="errorMessage">Usuário ou senha incorretos.</p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            var login = document.getElementById("login").value;
+            var senha = document.getElementById("senha").value;
+            var errorMessage = document.getElementById("errorMessage");
+
+            if (login === "admin" && senha === "admin") {
+                alert("Login realizado com sucesso!");
+                window.location.href = "index.html";
+            } else {
+                errorMessage.style.display = "block";
+            }
+        });
+    </script>
+</body>
+
+</html>

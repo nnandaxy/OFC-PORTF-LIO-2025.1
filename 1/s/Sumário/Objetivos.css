@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Círculos escuros */
+.circle {
+  position: absolute;
+  border: 20px solid #11265d;
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Círculo azul claro */
+.circle.light {
+  border-color: #0656b8;
+  border-width: 10px;
+}
+
+/* Posições dos círculos */
+.circle1 {
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: 50px;
+}
+
+.circle2 {
+  width: 120px;
+  height: 120px;
+  top: 30%;
+  right: 150px;
+}
+
+.circle3 {
+  width: 250px;
+  height: 250px;
+  bottom: -125px;
+  left: 40%;
+}
+
+.circle4 {
+  width: 50px;
+  height: 50px;
+  top: 30%;
+  right: 220px;
+}
+
+/* Pontinhos azuis em padrão diagonal */
+.dots {
+  position: absolute;
+  top: 25%;
+  right: 225px;
+  display: grid;
+  grid-template-columns: repeat(3, 5px);
+  grid-gap: 3px;
+}
+
+.dots div {
+  width: 5px;
+  height: 5px;
+  background-color: #5f95e0;
+  border-radius: 50%;
+}
+
+/* Textura de aquarela no canto inferior esquerdo */
+.watercolor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url('sua-imagem.png'); /* Substitua pelo nome correto */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+  position: relative;
+}
+
+body{
+   color:rgb(4, 14, 93);
+   background-color: #ffffff;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 80px;
+    color: darkblue;
+}
+
+
+p{
+font-size: 25px;
+margin-top: -20px;
+color: rgb(0, 4, 112);
+
+ }
+
+ .objetivos h2 {
+  font-size: 35px;
+  color: rgb(66, 1, 169);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.objetivos h3 {
+  font-size: 35px;
+  color: rgb(37, 5, 88);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.cards-container {
+    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color:  rgb(2, 9, 100);
+  border-radius: 12px;
+  padding: 10px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(37, 5, 88);
+  border: 2px solid rgb(37, 5, 88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.card h3 {
+  color: rgb(255, 255, 255);
+}
+
+.card p {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card button {
+  background-color: rgb(2, 9, 100);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color:rgb(2, 9, 100);
+}
+
+.card{
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.09);
+}
